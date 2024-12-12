@@ -1,0 +1,12 @@
+#N canvas 339 90 545 436 12;
+#X obj 55 48 inlet;
+#X obj 167 261 instr1;
+#X floatatom 83 76 5 0 0 0 - - - 0;
+#X obj 76 256 instr1;
+#X obj 82 202 clone instr1 2;
+#X obj 82 226 outlet~;
+#X msg 83 99 next \$1;
+#X connect 0 0 2 0;
+#X connect 2 0 6 0;
+#X connect 4 0 5 0;
+#X connect 6 0 4 0;
